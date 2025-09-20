@@ -63,7 +63,6 @@ def query_data(conn):
         for row in results:
             print(f"ID: {row['id']}, 姓名: {row['name']}, 邮箱: {row['email']}, 年龄: {row['age']}")
         print("-" * 50)
-        print(f"共找到 {len(results)} 条记录")
     except mysql.connector.Error as err:
         print(f"查询错误: {err}")
 
